@@ -38,6 +38,7 @@ public class JbpmConfigurationTest extends AbstractJbpmTestCase {
 
   protected void tearDown() throws Exception {
     JbpmConfiguration.setDefaultObjectFactory(null);
+    JbpmConfiguration.clearInstances();
     super.tearDown();
   }
 
